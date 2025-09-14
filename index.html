@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+    <link rel="icon" type="image/png" href="./Assests/images/portfolio.png" />
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Portfolio</div>
+            <div class="hamburger" onclick="toggleMenu()">
+              ☰
+            </div>
+              <script>
+                function toggleMenu() {
+                  const nav = document.getElementById("navLinks");
+                  nav.classList.toggle("active");
+                }
+              </script>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#Certificate">Certificate</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="logo-img">
+                <img src="https://i.pinimg.com/736x/ad/66/d8/ad66d8eb0892033602320f878c4eaa32.jpg" alt="Logo" />
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-container" id="home">
+        <div class="top-section">
+            <div class="name">
+                <p class="p">Welcome To My Space !</p>
+                <h1 class="a"> Hi, I am Drishti</h1> 
+                <h2 class="h">Full Stack Developer</h2>
+            </div>
+            <div class="description">
+                <p>I specialize in creating end-to-end web solutions with clean code,
+                    modern frameworks, and a focus on performance and usability.
+                    Developing apps that don’t just work, but leave an impact. 
+                    Always learning, exploring new tech, and contributing to projects.</p>
+            </div>
+        </div>
+    </div>
+    
+    <section class="about-sec" id="about">
+
+        <div class="about-edu-box">
+            <div class="about">
+            <h2>About Me</h2>
+            <img src="./Assests/images/WhatsApp Image 2025-08-19 at 23.55.45_a40dbe8b.jpg" alt="Drishti Gupta" class="profile-img" > <!-- Replace with your image -->
+            <p>I’m Drishti Gupta, a passionate Full Stack Developer with a strong focus on building scalable, 
+                user-friendly, and high-performance web applications. With hands-on experience in modern technologies 
+                and frameworks, my approach blends clean code, problem-solving, and creativity — ensuring every project 
+                is not only efficient but also engaging.</p>
+            
+            <div class="tags">
+                <span>Self-Learner</span>
+                <span>Problem Solver</span>
+                <span>Creative Thinker</span>
+            </div>
+            </div>
+
+            <div class="education">
+            <h2>Education</h2>
+
+            <div class="edu-item">
+                <h3>B.Tech in Computer Science (AI & ML)</h3>
+                <p>Ambala College of Engineering (2022 - 2026)</p>
+                <p>Specialized in Full Stack Development</p>
+            </div>
+
+            <div class="edu-item">
+                <h3>Senior Secondary (Class 12)</h3>
+                <p>Lord Mahavir Jain Public School, Ambala Cantt</p>
+                <p>Completed with focus on Science stream, building strong fundamentals in Mathematics, Physics, and Computer Science.</p>
+            </div>
+
+            <div class="edu-item">
+                <h3>Secondary (Class 10)</h3>
+                <p>Lord Mahavir Jain Public School, Ambala Cantt</p>
+                <p>Achieved excellent academic performance with a solid foundation in core subjects and active participation in co-curricular activities.</p>
+            </div>
+
+            <div class="socials">
+                <a href="https://github.com/Drishti0430" target="_blank">
+                    <img src="./Assests/images/github.png" width="30" height="30" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/drishti-gupta-297624254/" target="_blank">
+                    <img src="./Assests/images/linkedin.png" width="30" height="30" alt="LinkedIn">  
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="about">
+          <h2 class="title-main">Technical Skills :</h2>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="./Assests/images/coding.png"alt="HTML"/>
+                <h3>HTML & CSS</h3>
+                <p>Building the foundation of modern, responsive, and elegant UIs.</p>
+            </div>
+            <div class="card">
+              <img
+                src="./Assests/images/nodejs.png" alt="nodejs and express"/>
+              <h3>Node.js & Express</h3>
+              <p>Developing powerful server-side apps and REST APIs.</p>
+            </div>
+            <div class="card">
+              <img
+                src="./Assests/images/javascript.png" alt="JavaScript"/>
+              <h3>JavaScript</h3>
+              <p>Adding interactivity, logic, and smooth dynamic experiences.</p>
+            </div>
+            <div class="card">
+              <img
+                src="./Assests/images/react.png"alt="React"/>
+              <h3>React</h3>
+              <p>Creating reusable, fast, and scalable front-end applications.</p>
+            </div>
+            <div class="card">
+              <img
+                src="./Assests/images/database-storage.png"alt="MongoDB"/>
+              <h3>MongoDB</h3>
+              <p>Managing data efficiently with a flexible NoSQL database.</p>
+            </div>
+            <div class="card">
+              <img
+                src="./Assests/images/python.png"alt="MongoDB"/>
+              <h3>Python</h3>
+              <p>Python Libraries Numpy, Pandas, Matplotlib</p>
+            </div>
+          </div>
+    </section>
+
+    <section class="project-gallery" id="projects">
+        <div class="gallery-header">
+            <h1>Project Gallery</h1>
+            <p>Some of my recent works showcased visually</p>
+        </div>
+        <div class="cardsection">
+          <div class="maincard">
+            <div class="img">
+              <img src="./Assests/images/number game.png"alt="project-1">
+            </div>
+            <div class="contentofcard">
+              <h2>Guess the Secret Number</h2>
+              <p>
+                This is a simple and interactive Number Guessing Game where users challenge 
+                their logic and intuition to find the hidden number.The game is designed 
+                to be user-friendly and engaging for all age groups.
+              </p>
+              <a href="https://drishti0430.github.io/numbergame/" target="_blank">
+                  <button class="bttn" type="button">View More</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="maincard">
+            <div class="img">
+              <img src="./Assests/images/catch the circle.png"alt="project-2">
+            </div>
+            <div class="contentofcard">
+              <h2>Catch The Circle Game</h2>
+              <p>
+                his is a fun and interactive game where the player has to catch moving circles within a limited time. 
+                The objective is to click on the circle as quickly as possible to earn points. 
+                The game tests reflexes, focus, and speed, making it enjoyable and challenging at the same time.
+              </p>
+              <a href="https://drishti0430.github.io/CircleCatchingGame/" target="_blank">
+                  <button class="bttn" type="button">View More</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="maincard">
+            <div class="img">
+              <img src="./Assests/images/delhi city.png"alt="project-3">
+            </div>
+            <div class="contentofcard">
+              <h2>Discover the Heart of India’s Capital</h2>
+              <p>
+                This project is a visually rich City Guide for Delhi, 
+                aimed at providing users with an overview of the capital’s 
+                culture, history, and popular spots. It offers:
+              </p>
+              <a href="https://drishti0430.github.io/CityPage/" target="_blank">
+                  <button class="bttn" type="button">View More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="certification" id="Certificate">
+        <h1>
+          "My Certifications"
+        </h1>
+          <div class="carousel-track">
+            <!-- Certification Cards -->
+            <div class="cert-card">
+              <h2 class="cert-title">AI/ML Training</h2>
+              <p class="cert-org">CodroidHub Pvt. Ltd.</p>
+              <p class="cert-desc">Practical training on Artificial Intelligence & Machine Learning techniques.</p>
+              
+            </div>
+
+            <div class="cert-card">
+              <h2 class="cert-title">Power BI</h2>
+              <p class="cert-org">CodroidHub Pvt. Ltd.</p>
+              <p class="cert-desc">Learned data visualization and dashboard building for business insights.</p>
+              
+            </div>
+
+            <div class="cert-card">
+              <h2 class="cert-title">Prompt Engineering</h2>
+              <p class="cert-org">CodroidHub Pvt. Ltd.</p>
+              <p class="cert-desc">Gained expertise in crafting effective AI/LLM prompts.</p>
+            </div>
+
+            <div class="cert-card">
+              <h2 class="cert-title">GitHub Profile Building</h2>
+              <p class="cert-org">CodroidHub Pvt. Ltd.</p>
+              <p class="cert-desc">Created and optimized GitHub profiles with project highlights.</p>
+            </div>
+          </div>
+        
+    </section>
+    
+    <div class="contact-container" id="contact">
+        <div class="contact-info">
+            <h1>Get In Touch</h1>
+            <p class="head">Let’s work together! Reach out and we’ll support you every step of the way.</p>
+            
+            <div class="info-item">
+                <img src="./Assests/images/telephone.png" width="30" height="30">
+                <div>
+                    <h3>Phone</h3>
+                    <p>(+081) 5678 1234</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                 <img src="./Assests/images/email.png" width="30" height="30">
+                <div>
+                    <h3>Email</h3>
+                   <p><a href="mailto:drishtigupta1230@gmail.com">mail@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                 <img src="./Assests/images/location.png" width="30" height="30">
+                <div>
+                    <h3>Address</h3>
+                    <p>Ambala Cantt, India</p>
+                </div>
+            </div>
+             <hr>
+            <div class="social-media">
+                <a href="https://github.com/Drishti0430" target="_blank">
+                    <img src="./Assests/images/github.png" width="30" height="30" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/drishti-gupta-297624254/" target="_blank">
+                    <img src="./Assests/images/linkedin.png" width="30" height="30" alt="LinkedIn">  
+                </a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form>
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Name" required />
+                <input type="tel" placeholder="Phone" required />
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
